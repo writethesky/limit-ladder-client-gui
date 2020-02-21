@@ -1,0 +1,50 @@
+{
+  "name": "limit-ladder-client-gui",
+  "version": "0.1.0",
+  "private": true,
+  "author": "writethesky",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "start": "vue-cli-service build --dest app/dist && electron app",
+    "dist": "vue-cli-service build --dest app/dist && electron-builder app",
+    "lint": "vue-cli-service lint"
+  },
+  "main": "node/main.js",
+  "build": {
+    "appId": "gui.limit-ladder-client.app",
+    "productName": "破天梯",
+    "copyright": "Copyright © year ${author}",
+    "asar": false,
+    "files": [
+      "dist",
+      "cli",
+      "node"
+    ],
+    "directories": {
+      "app": "app",
+      "output": "dist"
+    }
+  },
+  "dependencies": {
+    "core-js": "^3.3.2",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-plugin-eslint": "^4.0.0",
+    "@vue/cli-plugin-router": "^4.0.0",
+    "@vue/cli-plugin-vuex": "^4.0.5",
+    "@vue/cli-service": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "electron": "^7.1.2",
+    "electron-builder": "^21.2.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

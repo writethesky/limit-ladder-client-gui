@@ -1,0 +1,16 @@
+google.com
+*.google.com
+*.googlevideo.com
+*.googleusercontent.com
+*.googleapis.com
+chrome-devtools-frontend.appspot.com
+golang.org
+godoc.org
+youtube.com
+*.youtube.com
+*.ytimg.com
+electronjs.org
+gist.github.com
+*.github.io
+*.amazonaws.com
+sourceforge.net

@@ -1,0 +1,5 @@
+{
+    "name": "limit-ladder-client-gui",
+    "version": "0.1.0",
+    "main": "node/main.js"
+}
